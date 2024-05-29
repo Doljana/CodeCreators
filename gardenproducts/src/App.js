@@ -1,10 +1,16 @@
-
+import "./App.css"
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 
 
 function App() {
   return (
-    <div className="App">
-      123
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="NotFound" element={<NotFound />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
