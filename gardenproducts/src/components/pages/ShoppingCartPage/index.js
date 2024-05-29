@@ -1,10 +1,11 @@
 import React from "react";
 
-function AllProductsPage() {
+function ShoppingCartPage() {
+
   return (
   
   <div>123</div>
   )
 }
 
-export default AllProductsPage;
+export default ShoppingCartPage;
