@@ -1,17 +1,11 @@
 import "./App.css"
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./components/Router";
 
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="NotFound" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </div>
+<RouterProvider router={router}/> 
   );
 }
 
