@@ -11,3 +11,4 @@ export function getAllCategories() {
           .then((data) => dispatch(renderCategoriesAction(data.data)));
   };
 }
+export default getAllCategories;

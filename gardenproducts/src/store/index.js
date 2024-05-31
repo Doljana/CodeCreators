@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from "redux";
-import { categoriesReducer } from "./reducers/categoriesReducer";
-import { discountReducer } from "./reducers/discountReducer";
+import { categoriesReducer } from "./categoriesReducer";
+import { discountReducer } from "./discountReducer";
 
 
 const rootReducer = combineReducers({

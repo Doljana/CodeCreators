@@ -1,3 +1,5 @@
+
+
 const defaultState = {
   categories: ROOT_URL + "categories/all",
 };
@@ -18,3 +20,5 @@ export const renderCategoriesAction = (payload) => ({
   type: RENDER_CATEGORIES,
   payload,
 });
+
+export default categoriesReducer;
