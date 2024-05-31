@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./header.module.css";
 import basket from "../../assets/images/header/bag.svg";
 import logo from "../../assets/images/header/logo.svg";
+// import logo from "../../assets/images/header/heard.svg";
 import { NavLink } from "react-router-dom";
 
 
@@ -30,9 +31,13 @@ export default function Header() {
         <NavLink to="/Schoping Card ">
           <div className={styles.basket_icon}>
             <img className={styles.basket} src={basket} />
-            
-          </div>
+             </div>
+
         </NavLink>
+
+      
+
+
       </header>
     </>
   );
