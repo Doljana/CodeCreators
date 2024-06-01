@@ -1,17 +1,21 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCategories } from "../API/index.js";
+import { getAllDiscounts } from "../API/index.js";
 import { useEffect } from "react";
 import styles from "./index.module.css"
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
-
-    const categories = useSelector((store) => store.categories);
+      const navigate = useNavigate();
+    // const categories = useSelector((store) => store.categories);
     const dispatch = useDispatch()
 
     useEffect(()=> {     
-      dispatch(getAllCategories(data.categories))
-    }, [])
+      dispatch(getAllCategories());
+      dispatch(getAllDiscounts());
+
+    }, [dispatch])
 
 
    

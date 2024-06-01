@@ -11,3 +11,5 @@ const defaultState = {
        return state;
    }
  };
+
+ export default productsReducer

@@ -1,3 +1,5 @@
+import { ROOT_URL } from "../API/index";
+
 const defaultState = {
   categories: ROOT_URL + "categories/all",
 };
@@ -18,3 +20,5 @@ export const renderDiscountAction = (payload) => ({
   type: RENDER_DISCOUNT,
   payload,
 });
+
+export default discountReducer

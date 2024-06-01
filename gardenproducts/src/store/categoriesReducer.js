@@ -1,10 +1,10 @@
-
+import { ROOT_URL } from "../API/index";
 
 const defaultState = {
   categories: ROOT_URL + "categories/all",
 };
 
-const RENDER_CATEGORIES = "RENDER_CATEGORIES"
+const RENDER_CATEGORIES = "RENDER_CATEGORIES";
 
 export const categoriesReducer = (state = defaultState, action) => {
   switch (action.type) {
