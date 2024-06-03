@@ -1,16 +1,21 @@
 import { ROOT_URL } from "../API/index";
 
 const defaultState = {
-  categories: ROOT_URL + "categories/all",
+  discounts: [],
 };
 
-const RENDER_DISCOUNT = "RENDER_CATEGORIES";
+const RENDER_DISCOUNT = "RENDER_DISCOUNT";
 
 export const discountReducer = (state = defaultState, action) => {
   switch (action.type) {
     case "RENDER_DISCOUNT":
-      return { discount: state.discount + action.payload };
-
+    
+      return {
+        ...state,
+        discounts: state.discounts.filter(
+          (products) => products.discont_price !== 0
+        ),
+      };
     default:
       return state;
   }
@@ -21,4 +26,3 @@ export const renderDiscountAction = (payload) => ({
   payload,
 });
 
-export default discountReducer
