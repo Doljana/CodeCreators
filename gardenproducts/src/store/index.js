@@ -1,4 +1,5 @@
-import { createStore, combineReducers } from "redux";
+import { combineReducers } from "redux";
+import { configureStore } from '@reduxjs/toolkit';
 import { categoriesReducer } from "./categoriesReducer";
 import { discountReducer } from "./discountReducer";
 
@@ -8,4 +9,4 @@ const rootReducer = combineReducers({
   discounts: discountReducer
 });
 
-export const store = createStore(rootReducer)
+export const store = configureStore({ reducer: rootReducer, });
