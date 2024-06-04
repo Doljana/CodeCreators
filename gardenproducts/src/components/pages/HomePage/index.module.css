@@ -4,6 +4,33 @@
     flex-direction: column;
     row-gap: 80px;
 }
-/* .banner{
-    background-image: ;
-} */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-image: url('../../../assets/images/img.svg');
+    background-size: cover;
+    padding: 80px 2.5% 210px 2.5%;
+}
+h1{
+   
+    color: var(--txt-white, #FFF);
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 105px;
+    max-width: 1000px;
+}
+.checkBtn{
+    width: 218px;
+    padding: 16px 56px;
+    border-radius: 6px;
+    background: var(--txt-green, #92A134);
+    border: none;
+    color: var(--txt-white, #FFF);
+    font-size: 20px;
+    text-wrap: nowrap;
+    font-weight: 600;
+    line-height: 130%;
+    cursor: pointer;
+}
