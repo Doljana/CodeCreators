@@ -2,7 +2,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: white;
+    background-color: #FFFFF1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,3 +35,56 @@ header {
     height: 40px;
 }
 
+.heard_icon {
+    position: relative;
+}
+
+.heard {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+
+.navLink {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    
+
+  }
+
+  .greenButton {
+    background-color:  #92A134; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    margin-left: 10px; 
+    position: absolute;
+    top: 30px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  
+  .toggleButton {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    margin-left: 10px; 
+  }
+  .toggleButton:hover {
+    background-color: #218838; /* Тёмный зелёный при наведении */
+  }
